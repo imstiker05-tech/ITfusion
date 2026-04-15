@@ -2,7 +2,7 @@ const form = document.getElementById("requestForm");
 const formStatus = document.getElementById("formStatus");
 const toTopBtn = document.getElementById("toTopBtn");
 const fields = ["name", "phone", "message"];
-const WHATSAPP_NUMBER = "77751959135";
+const WHATSAPP_NUMBER = "+77751959135";
 
 // Attach smooth scroll to internal anchor links for better UX.
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
