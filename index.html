@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT Fusion — Компьютерные услуги</title>
+  <meta name="description" content="IT Fusion — профессиональные компьютерные услуги: настройка ПК, создание сайтов, дизайн и помощь студентам.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+  <header class="hero" id="home">
+    <nav class="nav container">
+      <a href="#home" class="logo">IT Fusion</a>
+      <ul class="nav-links">
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#benefits">Преимущества</a></li>
+        <li><a href="#about">Обо мне</a></li>
+        <li><a href="#contact">Заявка</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-small">Оставить заявку</a>
+    </nav>
+
+    <div class="hero-content container">
+      <h1>IT Fusion — Компьютерные услуги</h1>
+      <p>Решаю любые задачи с ПК, сайтами и дизайном</p>
+      <a href="#contact" class="btn btn-primary">Оставить заявку</a>
+    </div>
+    <div class="hero-glow" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Услуги</h2>
+        <div class="cards-grid">
+          <article class="card">
+            <div class="icon" aria-hidden="true">🖥️</div>
+            <h3>Установка и настройка ПК</h3>
+            <p>Сборка, обновление, ускорение системы и устранение ошибок Windows.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">🌐</div>
+            <h3>Создание сайтов</h3>
+            <p>Лендинги и сайты под ключ с адаптивным дизайном и высокой скоростью.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">🎨</div>
+            <h3>Дизайн (баннеры, посты)</h3>
+            <p>Современные визуалы для соцсетей, рекламы и личного бренда.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">📚</div>
+            <h3>Помощь студентам</h3>
+            <p>Оформление работ, презентации, техподдержка и консультации по IT.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="benefits" class="section section-alt">
+      <div class="container">
+        <h2>Почему выбирают меня</h2>
+        <div class="benefits-list">
+          <div class="benefit-item"><span>⚡</span> Быстро</div>
+          <div class="benefit-item"><span>✅</span> Качественно</div>
+          <div class="benefit-item"><span>💸</span> Доступные цены</div>
+          <div class="benefit-item"><span>🤝</span> Поддержка</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container about">
+        <h2>Обо мне</h2>
+        <p>
+          IT Fusion — это персональный IT-сервис, где каждое решение подбирается под вашу задачу.
+          Помогаю клиентам уверенно работать с техникой, запускать стильные сайты и получать
+          качественный визуальный контент. Работаю на результат, соблюдаю сроки и всегда остаюсь на связи.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2>Форма заявки</h2>
+        <form id="requestForm" class="contact-form" novalidate>
+          <div class="input-group">
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+            <small class="error-message"></small>
+          </div>
+          <div class="input-group">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+            <small class="error-message"></small>
+          </div>
+          <div class="input-group">
+            <label for="message">Сообщение</label>
+            <textarea id="message" name="message" rows="5" placeholder="Опишите задачу" required></textarea>
+            <small class="error-message"></small>
+          </div>
+          <button type="submit" class="btn btn-primary">Отправить</button>
+          <p id="formStatus" class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <strong>Контакты</strong>
+        <p>Instagram: <a href="https://www.instagram.com/itfusiondev/" target="_blank" rel="noopener noreferrer">@itfusion</a></p>
+      </div>
+      <p>© 2026 IT Fusion</p>
+    </div>
+  </footer>
+
+  <button id="toTopBtn" class="to-top" type="button" aria-label="Прокрутить вверх">↑</button>
+
+  <script src="scriptik.js"></script>
+</body>
+</html>
